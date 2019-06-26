@@ -1,0 +1,150 @@
+.containerloginProfessor{
+    left: 200px;
+    display: block;
+    height: 360px;
+    top: 415px;
+    position: absolute;
+    width: 580px;
+}
+.invalidDataProfessor,
+.invalidDataSendMail{
+    color: red;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+.invalidDataSendMail{
+    right: 12%;
+    top: 25%;
+    transform: translate(0,0);
+}
+.email,
+.password,
+.forgotPasswordEmail{
+    height: 100px;
+    position: relative;
+    top: 55px;
+    width: 580px;
+}
+.forgotPasswordEmail{
+    top: 10px;
+}
+.email label,
+.password label,
+.forgotPasswordEmail label{
+    color:#373739;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+}
+.email input,
+.password input,
+.forgotPasswordEmail input{
+    border-radius: 20px;
+    border: none;
+    float: right;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+    height: 50px;
+    outline: none;
+    padding-left: 20px;
+    width: 310px;
+}
+.forgotPasswordEmail input{
+    border: 2px solid #545871;
+}
+.email input::placeholder,
+.password input::placeholder,
+.forgotPasswordEmail input:placeholder{
+    color: #cacaca;;
+    font-family: 'Segoe UI Semibold';
+}
+.loginButtonProfessor,
+.changePasswordButtonProfessor,
+.forgotPassword{
+    height: 70px;
+    padding-left: 135px;
+    position: relative;
+    width: 290px;
+}
+.loginButtonProfessor{
+    top: 120px;
+}
+.changePasswordButtonProfessor{
+    top: 140px;
+}
+.forgotPassword{
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline; 
+    top: 140px;
+}
+.forgotPasswordPopUp img{
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    width: 30px;
+}
+.forgotPassword p {
+    cursor: pointer;
+}
+.borderErrorProfessor{
+    box-shadow: 0px 0px 2px 2px red;
+}
+.loginButtonProfessor button,
+.changePasswordButtonProfessor button,
+.forgotPasswordPopUp button{
+    border-radius: 30px;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    height: 65px;
+    outline: none;
+    right: 10px;
+    transition: .3s ease-in-out;
+    width: 290px;
+}
+.loginButtonProfessor button,
+.forgotPasswordPopUp button{
+    background-color: #545871;
+    border:none;
+    color: #e6e4e4;
+}
+.forgotPasswordPopUp button{
+    position: relative;
+    left: 135px;
+}
+.changePasswordButtonProfessor button{
+    background-color: #F7ECEB;
+    border-color: #545871;
+    color: #545871;
+}
+.loginButtonProfessor button:hover,
+.changePasswordButtonProfessor button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.forgotPasswordPopUp{
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0px 0px 15px 0px black;
+  display: none;
+  left: 50%;
+  position: absolute;
+  padding: 0px 40px 30px 40px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.forgotPasswordPopUp p{
+  font-family: 'Segoe UI semibold';
+  font-size: 24px;
+  text-align: center;
+}
+.forgotPasswordPopUp button:hover{
+  cursor: pointer;
+}

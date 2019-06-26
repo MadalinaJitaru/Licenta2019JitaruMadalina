@@ -1,0 +1,134 @@
+.containerMoreInformation{
+    left: 93px;
+    display: block;
+    height: 550px;
+    top: 280px;
+    position: absolute;
+    width: 580px;
+}
+.invalidDataMoreInformation{
+    color: red;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    transform: translate(40%, -10%);
+}
+.faculty,
+.specialization,
+.yearOfStudy,
+.group{
+    height: 100px;
+    position: relative;
+    top: 55px;
+    width: 580px;
+}
+.faculty label,
+.specialization label,
+.yearOfStudy label,
+.group label{
+    color:#373739;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+}
+.customSelect {
+    font-family: 'Segoe UI Semibold';
+    float: right;
+    position: relative;
+}
+.customSelect select {
+  display: none;
+}
+.selectSelected:after {
+    border: 6px solid transparent;
+    border-color: #cacaca transparent transparent transparent;  
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 10px;
+    width: 0;
+}
+.selectSelected.selectArrowActive:after {
+  border-color: transparent transparent #cacaca transparent;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.selectItems div,.selectSelected {
+    background-color: white;
+    box-sizing: border-box;
+    color: #cacaca;
+    cursor: pointer;
+    font-size: 20px;
+    min-height: 50px;
+    margin: 0;
+    outline: none;
+    padding: 8px 16px;
+    width: 310px;
+    user-select: none;
+}
+.selectSelected{
+    border-radius: 5px;
+}
+.disabledDropdownSelect{
+    color: #eee;
+    pointer-events: none;
+}
+.disabledDropdownSelect:after{
+    border-color: #eee transparent transparent transparent;  
+    
+}
+.selectItems {
+    left: 0;
+    height: 200px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    position: absolute;
+    top: 95%;
+    right: 0;
+    z-index: 99;
+}
+.selectHide {
+    display: none;
+}
+.selectItems div:hover, .sameAsSelected {
+    background-color: #ddd;
+}
+.moreInformationButton{
+    height: 70px;
+    padding-left: 135px;
+    position: relative;
+    top: 100px;
+    width: 290px;
+}
+.moreInformationButton button{
+    background-color: #545871;
+    border: none;
+    border-radius: 30px;
+    color: #e6e4e4;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    height: 65px;
+    outline: none;
+    right: 10px;
+    transition: .3s ease-in-out;
+    width: 290px;
+}
+.moreInformationButton button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    background-color: #cacaca;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #545871;
+}

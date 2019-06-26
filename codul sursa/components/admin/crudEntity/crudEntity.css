@@ -1,0 +1,467 @@
+.crudEntityButtonsRight,
+.crudEntityButtonsLeft{
+  display: flex;
+  position: absolute;
+  top: 15%;
+}
+.crudEntityButtonsRight{
+  right: 10%;
+}
+.crudEntityButtonsLeft{
+  left: 10%;
+}
+.crudEntityButtonsRight img,
+.crudEntityButtonsLeft img{
+  cursor: pointer;
+  height: 30px;
+  margin: 5px;
+  width: 30px;
+}
+.tooltipContainer,
+.tooltipContainerColumns{
+  position: relative;
+}
+.tooltipContainer button[type='submit'],
+.tooltipContainerColumns button[type='submit']{
+ background-color: transparent;
+ border: transparent;
+ cursor: pointer;
+ outline: none;
+ padding: 0;
+}
+.tooltipContainer .tooltiptext,
+.tooltipContainerColumns .tooltiptext {
+  background-color: #555;
+  border-radius: 6px;
+  bottom: 125%;
+  color: #fff;
+  font-family: 'Segoe UI Semibold';
+  left: 25%;
+  margin-left: -60px;
+  opacity: 0;
+  padding: 10px 10px;
+  position: absolute;
+  text-align: center;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  width: 120px;
+  z-index: 1;
+
+}
+.tooltipContainerColumns .tooltiptext{
+  width: auto;
+  right: 50px;
+}
+.tooltipContainer .tooltiptext::after,
+.tooltipContainerColumns .tooltiptext::after{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.tooltipContainer:hover .tooltiptext,
+.tooltipContainerColumns:hover .tooltiptext  {
+  visibility: visible;
+  opacity: 1;
+}
+.crudEntityContainer{
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.15);
+  display: flex; 
+  left: 50%;
+  flex-wrap: wrap;
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+.invalidDataCreateEntity,
+.invalidDataUpdadeEntity,
+.sameDataCreateEntity{
+  color: red;
+  font-family: 'Segoe UI Semibold';
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  right: 17%;
+  top: 12%;
+}
+.sameDataCreateEntity{
+  right: 20%;
+}
+
+#optionError{
+  color: red;
+  display: none;
+  font-family: 'Segoe UI Semibold';
+  font-size: 20px;
+  margin: 0;
+  position: absolute;
+  right: 50%;
+  top: 16%;
+  transform: translate(50%, 0%);
+}
+.container{
+  cursor: pointer;
+  display: block;
+  padding-left: 35px;
+  padding-right: 35px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.container input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.gridContainerProfessor{
+  display: grid;
+  grid-template-columns: 40px 125px 250px 250px 300px 100px 400px 100px auto;
+}
+.gridContainerStudent{
+  display: grid;
+  grid-template-columns: 40px 305px 305px 305px 305px 305px auto;
+}
+.gridContainerCourse{
+  display: grid;
+  grid-template-columns: 40px 500px 500px 515px auto;
+}
+.gridContainerGroup{
+  display: grid;
+  grid-template-columns: 40px 350px 350px 300px 525px auto;
+}
+.gridContainerQuestion,
+.gridContainerSpecialization,
+.gridContainerStudyYear
+{
+  display: grid;
+  grid-template-columns: 40px 1525px auto;
+
+}
+.gridItem{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  color: #373739;
+  font-family: 'Segoe UI Semibold';
+  font-size: 20px;
+  padding: 20px;
+  text-align: left;
+}
+.container input:checked ~ .gridContainerProfessor,
+.container input:checked ~ .gridContainerStudent,
+.container input:checked ~ .gridContainerGroup,
+.container input:checked ~ .gridContainerCourse,
+.container input:checked ~ .gridContainerQuestion,
+.container input:checked ~ .gridContainerSpecialization,
+.container input:checked ~ .gridContainerStudyYear{
+  background: #cacaca;
+}
+.crudPopUp{
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0px 0px 5px 0px black;
+  display: none;
+  left: 50%;
+  height: 870px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 625px;
+  z-index: 100;
+}
+#editPopUpContainer{
+  height: 100%;
+  width: 100%;
+}
+.crudPopUpContainer{
+  height: 550px;
+  overflow-y: auto;
+  overflow-x: auto;
+  padding-left: 15px;
+  margin-bottom: 60px;
+}
+.crudPopUp img,
+.importEntityPopUp img{
+  cursor: pointer;
+  height: 30px;
+  margin: 5px;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  width: 30px;
+}
+.crudPopUp h1{
+  color: #373739;
+  font-family: 'Segoe UI Semibold';
+  font-size: 50px;
+  text-align: center;
+}
+/*adaugat numarul matricol si cnp - modificat pe maine*/
+.crudInputContainer{
+  height: 100px;
+  width: 570px;
+}
+.crudInputContainer:first-child{
+  margin-top: 10px;
+}
+.crudInputContainer label{
+  color:#373739;
+  font-family: 'Segoe UI Semibold';
+  font-size: 20px;
+  padding-left: 20px; 
+}
+.crudInputContainer input{
+  box-shadow: 0px 0px 3px 0px black;
+  border-radius: 20px;
+  border: none;
+  float: right;
+  font-family: 'Segoe UI Semibold';
+  font-size: 20px;
+  height: 50px;
+  outline: none;
+  padding-left: 20px;
+  width: 350px;
+}
+.crudInputContainer textarea{
+  box-shadow: 0px 0px 3px 0px black;
+  border-radius: 20px;
+  border: none;
+  float: right;
+  font-family: 'Segoe UI Semibold';
+  font-size: 20px;
+  height: 500px;
+  outline: none;
+  padding-left: 20px;
+  width: 310px;
+}
+.crudInputContainer input::placeholder{
+  color: #cacaca;;
+  font-family: 'Segoe UI Semibold';
+}
+
+/*adaugat dropdown-urile si modificat pe maine*/
+.crudRadioButtonContainer{
+  height: 180px;
+  width: 570px;
+  margin-bottom: 50px;
+}
+.crudRadioButtonContainerList{
+  height: 500px;
+  width: 570px;
+  margin-bottom: 50px;
+}
+#crudRadioButtonContainerAddSemester,
+#crudRadioButtonContainerEditSemester{
+  margin-bottom: 20px;
+}
+#crudRadioButtonContainerAddTitular,
+#crudRadioButtonContainerAddAdmin
+{
+  margin-bottom: -10px;
+}
+.crudRadioButtonContainer label,
+.crudRadioButtonContainerList label{
+  color:#373739;
+  font-family: 'Segoe UI Semibold';
+  font-size: 20px;
+  padding-left: 20px;
+}
+.crudEntityButton{
+  height: 70px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 0);
+  width: 290px;
+}
+.crudEntityButton button{
+  background-color: #545871;
+  border: none;
+  border-radius: 30px;
+  color: #e6e4e4;
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  height: 65px;
+  outline: none;
+  right: 10px;
+  transition: .3s ease-in-out;
+  width: 290px;
+}
+.crudEntityButton button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.options{
+  box-shadow: 0px 0px 3px 0px black;
+  border-radius: 20px 0px 0px 20px;
+  float: right;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 61%;
+}
+.optionsSemester{
+  box-shadow: 0px 0px 3px 0px black;
+  border-radius: 20px;
+  float: right;
+  height: 65%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 61%;
+}
+.option{
+  /*border: 2px solid green;*/
+  display: block;
+  padding: 15px 50px 15px 10px;
+  position: relative;
+}
+.option input{
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+.pseudoRadioButton,
+.pseudoCheckboxButton{
+  background-color: #eee;
+  border:1px solid #545871;
+  right: 0;
+  height: 25px;
+  margin-right: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 25px;
+}
+.pseudoRadioButton {
+  border-radius: 50%;
+}
+.option:hover input ~ .pseudoRadioButton,
+.option:hover input ~ .pseudoCheckboxButton{
+  background-color: #ccc;
+  cursor: pointer;
+}
+.option:hover input:disabled ~ .pseudoRadioButton,
+.option:hover input:disabled ~ .pseudoCheckboxButton{
+  background-color: #eee;
+  cursor: auto;
+}
+.option input:checked ~ .pseudoRadioButton,
+.option input:checked ~ .pseudoCheckboxButton{
+  background-color: white;
+}
+.pseudoRadioButton:after,
+.pseudoCheckboxButton:after{
+  content: "";
+  display: none;
+  position: absolute;
+}
+.option input:checked ~ .pseudoRadioButton:after,
+.option input:checked ~ .pseudoCheckboxButton:after{
+  display: block;
+}
+.option input:disabled ~ .pseudoRadioButton::after,
+.option input:disabled ~ .pseudoCheckboxButton::after{
+  background-color: #cacaca;
+  display: block;
+}
+.option .pseudoRadioButton:after{
+  background-color: #545871;
+  border-radius: 50%;
+  left: 4.5px;
+  height: 16px;
+  top: 4.5px;
+  width: 16px;
+
+}
+.option .pseudoCheckboxButton:after{
+  left: 9px;
+  top: 1px;
+  width: 5px;
+  height: 16px;
+  border: solid #545871;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+/*
+.option .pseudoCheckboxButton:after {
+ 
+}
+*/
+/* ENTITY*/
+.deleteEntityPopUp,
+.importEntityPopUp{
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0px 0px 15px 0px black;
+  display: none;
+  left: 50%;
+  position: absolute;
+  padding: 0px 45px 85px 45px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.deleteEntityPopUp p,
+.importEntityPopUp p{
+  font-family: 'Segoe UI semibold';
+  font-size: 24px;
+  text-align: center;
+}
+.importEntityPopUp p{
+  color:#373739;
+}
+.deleteEntityPopUp button,
+.importEntityPopUp button[type='submit']{
+  background-color: #545871;
+  border: none;
+  border-radius: 30px;
+  color: #e6e4e4;
+  font-family: 'Segoe UI';
+  font-size: 24px;
+  height: 50px;
+  outline: none;
+  position: absolute;
+  padding: 0;
+  transition: .3s ease-in-out;
+  width: 90px;
+}
+.importEntityPopUp button[type='submit']{
+  bottom: 15%;
+  right: 50%;
+  transform: translate(50%, 0);
+  width: 180px;
+}
+.confirm{
+  left: 30%;
+}
+.cancel{
+  left: 50%;
+}
+.deleteEntityPopUp button:hover,
+.importEntityPopUp button:hover{
+  cursor: pointer;
+}
+
+::-webkit-scrollbar{
+  height: 13px;
+  width: 13px;
+}
+::-webkit-scrollbar-track{
+  background-color: #cacaca;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #888;
+  border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #545871;
+}
+::-webkit-scrollbar-corner {
+  background: #cacaca;
+};

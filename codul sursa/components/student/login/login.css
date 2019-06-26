@@ -1,0 +1,74 @@
+.containerLoginStudent{
+    left: 200px;
+    display: block;
+    height: 400px;
+    top: 450px;
+    position: absolute;
+    width: 580px;
+}
+.invalidDataStudent{
+    color: red;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+    margin: 0;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 50%);
+}
+.registerNumber,
+.identificationNumber{
+    height: 100px;
+    position: relative;
+    top: 55px;
+    width: 580px;
+}
+.registerNumber label,
+.identificationNumber label{
+    color:#373739;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+}
+.registerNumber input,
+.identificationNumber input{
+    border-radius: 20px;
+    border: none;
+    float: right;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+    height: 50px;
+    outline: none;
+    padding-left: 20px;
+    width: 310;
+}
+.registerNumber input::placeholder,
+.identificationNumber input::placeholder{
+    color: #cacaca;;
+    font-family: 'Segoe UI Semibold';
+}
+.borderErrorStudent{
+    box-shadow: 0px 0px 2px 2px red;
+}
+.loginButtonStudent{
+    height: 70px;
+    padding-left: 135px;
+    position: relative;
+    top: 120px;
+    width: 290px;
+}
+.loginButtonStudent button{
+    background-color: #545871;
+    border: none;
+    border-radius: 30px;
+    color: #e6e4e4;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    height: 65px;
+    outline: none;
+    right: 10px;
+    transition: .3s ease-in-out;
+    width: 290px;
+}
+.loginButtonStudent button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}

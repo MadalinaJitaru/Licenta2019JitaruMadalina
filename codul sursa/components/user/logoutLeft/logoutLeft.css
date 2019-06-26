@@ -1,0 +1,32 @@
+.logoutLeft{
+	position: absolute;
+	top: 2%;
+	left: 1%;
+}
+.logoutLeft img{
+	height: 50px;
+}
+.logoutLeft img:hover{
+	cursor: pointer;
+}
+.logoutLeft .tooltiptext {
+  background-color: #555;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Segoe UI Semibold';
+  left: 100%;
+  opacity: 0;
+  padding: 10px 10px;
+  position: absolute;
+  text-align: center;
+  top: 10%;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  width: 70px;
+  z-index: 1;
+
+}
+.logoutLeft:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

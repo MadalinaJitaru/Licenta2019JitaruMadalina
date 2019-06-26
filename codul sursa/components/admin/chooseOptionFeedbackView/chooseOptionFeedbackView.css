@@ -1,0 +1,26 @@
+.feedbackView{
+    bottom: 10%;
+    height: 70px;
+    left: 42%;
+    margin: 0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 290px;
+}
+.feedbackView button{
+    background-color: #545871;
+    border: none;
+    border-radius: 30px;
+    color: #e6e4e4;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    height: 65px;
+    outline: none;
+    padding: 0;
+    transition: .3s ease-in-out;
+    width: 290px;
+}
+.feedbackView button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}

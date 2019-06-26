@@ -1,0 +1,25 @@
+.chooseOptionDelimiter p{
+    color:#444448;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+    left: 10%;
+    top: 68%;
+    position: absolute;
+}
+.chooseOptionDelimiter p::before,
+.chooseOptionDelimiter p::after {
+  background: #444448;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+p::after {
+    margin-left: 70px;
+}
+p::before {
+    margin-right: 70px;
+}
+  
+ 

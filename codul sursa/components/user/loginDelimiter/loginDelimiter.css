@@ -1,0 +1,25 @@
+.loginDelimiter p{
+    color:#444448;
+    font-family: 'Segoe UI Semibold';
+    font-size: 20px;
+    right: 130px;
+    top: 489px;
+    position: absolute;
+}
+.loginDelimiter p::before,
+.loginDelimiter p::after {
+  background: #444448;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+p::after {
+    margin-left: 70px;
+}
+p::before {
+    margin-right: 70px;
+}
+  
+ 

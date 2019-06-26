@@ -1,0 +1,21 @@
+.moreInformationTitle h1{
+    color:#444448;
+    font-family: 'Segoe UI Semibold';
+    font-size: 60px;
+    right: 250px;
+    top: 55px;
+    position: absolute;
+}
+.moreInformationLine p{
+    background: #444448;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    margin-bottom: 5px;
+    position: absolute;
+    right: 200px;
+    top: 205px;
+    width: 630px;
+  }
+    
+   

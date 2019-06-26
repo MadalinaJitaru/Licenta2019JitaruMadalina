@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.backgroundLeftSkewed{
+    background: url('./components/style/leftSkewed/backgroundLeftSkewed.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.leftSkewed{
+    background-color: #F7ECEB;
+    border-bottom-right-radius: 75%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 900px;
+}

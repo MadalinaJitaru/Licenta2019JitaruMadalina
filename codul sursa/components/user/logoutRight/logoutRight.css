@@ -1,0 +1,43 @@
+.logoutRight{
+	position: absolute;
+	top: 2%;
+	right: 1%;
+}
+.logoutRight img{
+	height: 50px;
+}
+.logoutRight img:hover{
+	cursor: pointer;
+}
+.logoutRight .tooltiptext {
+  background-color: #555;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Segoe UI Semibold';
+  opacity: 0;
+  padding: 10px 10px;
+  position: absolute;
+  right: 90%;
+  top: 10%;
+  text-align: center;
+  transition: opacity 0.3s;
+  visibility: hidden;
+  width: 70px;
+  z-index: 1;
+}
+
+.logoutRight .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.logoutRight:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

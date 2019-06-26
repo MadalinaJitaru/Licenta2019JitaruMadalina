@@ -1,0 +1,8 @@
+.loginUser h1{
+    color:#444448;
+    font-family: 'Segoe UI Semibold';
+    font-size: 60px;
+    right: 250px;
+    top: 200px;
+    position: absolute;
+}

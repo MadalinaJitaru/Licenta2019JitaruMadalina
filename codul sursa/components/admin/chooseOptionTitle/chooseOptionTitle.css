@@ -1,0 +1,10 @@
+.chooseOptionTitle h1{
+    color:#444448;
+    font-family: 'Segoe UI Semibold';
+    font-size: 60px;
+    left: 43%;
+    position: absolute;
+    top: 9%;
+    transform: translate(-50%, -50%);
+}
+

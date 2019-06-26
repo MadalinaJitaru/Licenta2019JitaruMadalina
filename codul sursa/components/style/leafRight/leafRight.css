@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.backgroundLeafRight,
+.leafRight{
+    height: 100%;
+    width: 100%;
+}
+.backgroundLeafRight{
+    background-color: #545871;
+}
+.leafRight{
+    position: absolute;
+    top: 0;
+}
+.topBackgroundLeafRight,
+.bottomBackgroundLeafRight{
+    background-color: #F7ECEB;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 60%;
+}
+.topBackgroundLeafRight{
+    border-top-left-radius: 60%;
+    left:0;
+}
+.bottomBackgroundLeafRight{
+    border-bottom-right-radius: 60%;
+    right: 0;
+}

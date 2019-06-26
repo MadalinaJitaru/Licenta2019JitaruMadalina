@@ -1,0 +1,24 @@
+.loginButtonImProfessor{
+    height: 70px;
+    left: 37.3%;
+    position: absolute;
+    top: 885px;
+    width: 290px;
+}
+.loginButtonImProfessor button{
+    background-color: #F7ECEB;
+    border-color: #545871;
+    border-radius: 30px;
+    color: #545871;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+    height: 65px;
+    outline: none;
+    right: 10px;
+    transition: .3s ease-in-out;
+    width: 290px;
+}
+.loginButtonImProfessor button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}

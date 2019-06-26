@@ -1,0 +1,11 @@
+.feedbackResultsTitleForProfessor h1{
+    color:#444448;
+    font-family: 'Segoe UI Semibold';
+    font-size: 60px;
+    left: 50%;
+    margin: 0;
+    top: 10%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
